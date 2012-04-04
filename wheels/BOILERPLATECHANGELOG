@@ -1,0 +1,43 @@
+CFWHEELS BOILERPLATE VERSION 1.1.7 (03/29/2012)
+
+Initial Commit - [Greg Stallings]
+=================================
+
+* Convert existing config, controllers, events, models, helpers files to cfscript syntax
+* Add init functions with comments for all existing controllers and models
+* Add controller Main
+* Set home route to be index action in controller Main
+* Add view for index action in controller Main
+* Add "// private" comment to controllers and models as guide for ruby-style private method cutoff
+* Add title to main layout
+* Add meta charset, description, and keywords to main layout
+* Include Twitter bootstrap css and js in main layout
+* Include jQuery Google Ajax library js in main layout
+* Include jQueryUI Google Ajax library js in main layout
+* Include jQueryUI Google Ajax library css in main layout
+* Include non-existing favicon.ico in main layout
+* Add sample Twitter Bootstrap html5 to main layout
+* Add default folders to images folder to encourage better image organization
+* Enable full URL rewriting by uncommenting lines in .htaccess, IsapiRewrite4.ini, and enabling rewriting in web.config
+* Add example application.dataSource in environment settings
+* Set error email address in production environment settings
+* Set reload password in production and maintenance environment settings
+* Set application settings variables to config/app.cfm
+* Add top-level domain based switch case to config/environment.cfm
+* Add Twitter Bootstrap compatible default settings on form helper functions in config/settings.cfm
+* Add Twitter Bootstrap compatible default settings on other view helper functions in config/settings.cfm
+* Add robots.txt with settings to allow all for all user agents
+* Add layouts folder to views folder
+* Add shared folder to views folder for shared partials
+* Add _analyticsScript.cfm as to views/shared folder as shared partial
+* Add wheels form helper demonstration to home view
+* Add FlashWrapper plugin to extend functions flash() and flashMessages()
+
+IDEAS - [Greg Stallings]
+========================
+
+* Add standard for CSRF protection in forms
+* Add standard Sessions controller for login session handling
+* Add .htaccess and web.config rules from HTML5Boilerplate
+* Include Modernizr
+* Add standard for public-key encryption for reloadPassword so we are not sending password in cleartext as url parameter
